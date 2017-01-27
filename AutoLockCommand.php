@@ -94,7 +94,8 @@ class AutoLockCommand extends CConsoleCommand
 
         // 检查模式的值范围（暂时没有别的办法检查了？）
         if ($value < (LOCK_NB & LOCK_UN & LOCK_EX & LOCK_SH) ||
-            $value > (LOCK_NB | LOCK_UN | LOCK_EX | LOCK_SH)) {
+            $value > (LOCK_NB | LOCK_UN | LOCK_EX | LOCK_SH)
+        ) {
             throw new CException('不支持的值，请确认。');
         }
 
@@ -158,6 +159,7 @@ class AutoLockCommand extends CConsoleCommand
         if (fwrite($file, getmypid())) {
             $this->lockFile = $file;
             $this->lockFilename = $filename;
+
             return true;
         }
 
