@@ -11,5 +11,10 @@
             "name": "XuanXin Zhen",
             "email": "xuanxin.zhen@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "classmap": [
+            "AutoLockCommand.php"
+        ]
+    }
 }
