@@ -18,8 +18,7 @@
  * @property integer $lockMode 锁定模式
  *
  * @author: XuanXin Zhen <xuanxin.zhen@gmail.com>
- * @since 1.0
- * @package system.console
+ * @since 0.0.1
  */
 class AutoLockCommand extends CConsoleCommand
 {
